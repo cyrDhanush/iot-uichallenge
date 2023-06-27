@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:iot_uichallenge/homepage.dart';
+import 'package:iot_uichallenge/helpers/utils.dart';
+import 'package:iot_uichallenge/screens/controlscreen/controlscreen.dart';
+import 'package:iot_uichallenge/screens/homepage.dart';
+import 'package:iot_uichallenge/trialpage.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -20,7 +23,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'poppins',
       ),
-      home: HomePage(),
+      home: ControlScreen(),
     );
   }
 }

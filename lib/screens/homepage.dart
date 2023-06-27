@@ -17,6 +17,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Color(0xfffaede3),
       body: Stack(
         children: [
+          /// background red circle
           Positioned(
             top: -25,
             left: -25,
@@ -29,6 +30,8 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
+
+          /// foreground layer
           BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 100, sigmaY: 100),
             child: Container(
